@@ -1,0 +1,63 @@
+// import React , { useContext } from "react";
+
+// // step--1
+// const AppContext = React.createContext() ;
+
+
+// // step ---2
+// const AppProvider = ({children}) => {
+
+//     return (
+//           <AppContext.Provider value = {"Raker Gupta"}>
+//          {children}
+//          </AppContext.Provider>
+//          )
+// } ;
+
+// // create self hook
+// const useGlobalContext = () =>{
+//     return useContext(AppContext) ;
+// }
+
+
+
+// ******************
+// import "./App.css";
+// import HeroSection from "./components/Hero";
+// import Navigation from "./components/Navigation";
+// import { useGlobalContext } from "./Context";
+// const App = () => {
+//   const name = useGlobalContext() ;
+//   console.log(name) ;
+//   return (
+//     <div >
+//       <div>
+//         {name}
+//       </div>
+//       <Navigation />
+//       <HeroSection />
+//     </div>
+//   );
+// };
+// // 
+// export default App;
+
+
+// export {AppContext , AppProvider , useGlobalContext} ;
+// **************
+// import React, { useContext } from "react";
+// import ReactDOM from "react-dom/client";
+
+
+// import "./index.css";
+// import App from "./App";
+// import { AppProvider } from "./Context";
+
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//   <React.StrictMode>
+//     <AppProvider>
+//       <App />
+//     </AppProvider>
+    
+//   </React.StrictMode>
+// );
